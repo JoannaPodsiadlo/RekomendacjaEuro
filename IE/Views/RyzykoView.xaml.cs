@@ -15,14 +15,14 @@ using System.Windows.Shapes;
 
 namespace IE.Views
 {
-    /// <summary>
-    /// Logika interakcji dla klasy RyzykoView.xaml
-    /// </summary>
-    public partial class RyzykoView : UserControl
-    {
-        public RyzykoView()
-        {
-            InitializeComponent();
-        }
-    }
+	/// <summary>
+	/// Logika interakcji dla klasy RyzykoView.xaml
+	/// </summary>
+	public partial class RyzykoView : UserControl
+	{
+		public RyzykoView()
+		{
+			InitializeComponent();
+		}
+	}
 }
