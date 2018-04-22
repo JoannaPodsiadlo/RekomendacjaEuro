@@ -96,13 +96,13 @@
 				</Button>
 			</StackPanel>
 		</Grid>
-		<Grid Grid.Column="1" Grid.Row="1" Background="#E0E0E0">
+		<Grid Grid.Column="1" Grid.Row="1" Background="#9E9E9E">
 			<Grid.ColumnDefinitions>
 				<ColumnDefinition Width="802*"/>
 				<ColumnDefinition Width="17*"/>
 			</Grid.ColumnDefinitions>
 		</Grid>
 
-		<ContentControl Grid.Row="1" Grid.Column="1" Content="{Binding}"/>
+		<ContentControl Grid.Row="1" Grid.Column="1" Content="{Binding}" />
 	</Grid>
 </Window>
