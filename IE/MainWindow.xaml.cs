@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using IE.ViewModels;
 
 namespace IE
 {
@@ -31,6 +32,15 @@ namespace IE
         private void Navigation_MouseDown(object sender, MouseButtonEventArgs e)
         {
             DragMove();
+        }
+        private void ButtonStart_Click(object sender, RoutedEventArgs e)
+        {
+            DataContext = new StartViewModel();
+        }
+        private void ButtonPrognoza_Click(object sender, RoutedEventArgs e)
+        {
+            DataContext = new PrognozaViewModel();
+
         }
     }
 }
