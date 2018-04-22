@@ -39,8 +39,23 @@ namespace IE
         }
         private void ButtonPrognoza_Click(object sender, RoutedEventArgs e)
         {
-            DataContext = new PrognozaViewModel();
-
+			DataContext = new PrognozaViewModel();
         }
-    }
+		private void ButtonRyzyko_Click(object sender, RoutedEventArgs e)
+		{
+			DataContext = new RyzykoViewModel();
+		}
+		private void ButtonAkt_Click(object sender, RoutedEventArgs e)
+		{
+			DataContext = new AktViewModel();
+		}
+		private void ButtonTest_Click(object sender, RoutedEventArgs e)
+		{
+			DataContext = new TestViewModel();
+		}
+		private void ButtonoNas_Click(object sender, RoutedEventArgs e)
+		{
+			DataContext = new ONasViewModel();
+		}
+	}
 }
