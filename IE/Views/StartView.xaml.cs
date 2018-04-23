@@ -18,9 +18,9 @@ namespace IE.Views
     /// <summary>
     /// Logika interakcji dla klasy Start.xaml
     /// </summary>
-    public partial class Start : UserControl
+    public partial class StartView : UserControl
     {
-        public Start()
+        public StartView()
         {
             InitializeComponent();
         }
