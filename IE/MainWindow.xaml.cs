@@ -24,6 +24,8 @@ namespace IE
         public MainWindow()
         {
             InitializeComponent();
+            StartViewModel start = new StartViewModel();
+            this.Visibility = Visibility.Visible;
         }
         private void ButtonPower_Click(object sender, RoutedEventArgs e)
         {
