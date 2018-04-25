@@ -8,5 +8,6 @@ namespace IE.ViewModels
 {
     public class TestViewModel
     {
+        
     }
 }
