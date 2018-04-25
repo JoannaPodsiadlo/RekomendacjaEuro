@@ -6,20 +6,22 @@
              xmlns:local="clr-namespace:IE.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Background="Orange">
-        <ScrollViewer>
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="200"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="1*"/>
-                    <ColumnDefinition Width="1*"/>
-                    <ColumnDefinition Width="1*"/>
-                </Grid.ColumnDefinitions>
-            </Grid>
-        </ScrollViewer>
+    <Grid Background="#616161">
+
+        <Grid Width="799">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="   Autorzy projektu" Grid.Column="1" HorizontalAlignment="Left" Height="62" Margin="0,21,0,0" VerticalAlignment="Top" Width="266" FontWeight="Bold" FontSize="24" FontFamily="Alef"/>
+            <Frame Grid.ColumnSpan="3" Content="" HorizontalAlignment="Left" Height="83" VerticalAlignment="Top" Width="799" Margin="0,0,-0.333,0" Background="#FFDFD7D7"/>
+        </Grid>
+
     </Grid>
 </UserControl>

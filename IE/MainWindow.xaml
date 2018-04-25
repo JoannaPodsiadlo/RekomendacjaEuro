@@ -117,7 +117,7 @@
                     </Grid.ColumnDefinitions>
                     <Grid Grid.Column="0" Grid.ColumnSpan="3">
                         <Grid.Background>
-                            <ImageBrush ImageSource="C:\Users\jp\source\repos\RekomendacjaEuro\money.jpg" Stretch="UniformToFill"/>
+                            <ImageBrush ImageSource="C:\Users\Kusziaa\Downloads\RekomendacjaEuro\money.jpg" Stretch="UniformToFill"/>
                         </Grid.Background>
                     </Grid>
                     <Grid Grid.Row="2" Grid.ColumnSpan="3"  HorizontalAlignment="Center" Width="580" Height="300">
