@@ -33,7 +33,7 @@
                 <Grid Grid.Row="0">
                     <TextBlock Foreground="White" TextAlignment="Left" VerticalAlignment="Center" Style="{StaticResource MaterialDesignDisplay3TextBlock}" Margin="42,-1,0,-1">RYZYKO</TextBlock>
                 </Grid>
-                <Grid x:Name ="Navigation" Grid.Row="1" Grid.ColumnSpan ="3" Background="#424242" Margin="-8,0,0,0" >
+                <Grid x:Name ="Navigation" Grid.Row="1" Grid.ColumnSpan ="3" Background="#424242" >
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0" Width="1061">
                         <Button Height="48" Width="162" BorderBrush="#424242" Background="#424242"  >
                             <Grid>
@@ -71,6 +71,11 @@
                             </Grid>
                         </Button>
                     </StackPanel>
+                </Grid>
+                <Grid Grid.Row="2" Grid.ColumnSpan="3" Grid.RowSpan="2">
+                    <Grid.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="bg.jpg" AlignmentY="Top" AlignmentX="Center" Opacity="0.3" />
+                    </Grid.Background>
                 </Grid>
             </Grid>
         </ScrollViewer>
