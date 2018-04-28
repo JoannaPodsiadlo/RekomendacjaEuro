@@ -3,11 +3,77 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+              xmlns:materialDesign1="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:local="clr-namespace:IE.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Background="Yellow">
-        <ProgressBar
- Style="{StaticResource MaterialDesignCircularProgressBar}" Value="35" IsIndeterminate="True" />
+             FontFamily="{StaticResource MaterialDesignFont}"
+             d:DesignHeight="822" d:DesignWidth="1088">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="0"/>
+                <GradientStop Color="Gray" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <ScrollViewer>
+            <Grid Width="1053" Height="798">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="89"/>
+                    <RowDefinition Height="48*"/>
+                    <RowDefinition Height="413*"/>
+                    <RowDefinition Height="248*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="393"/>
+                    <ColumnDefinition Width="68*"/>
+                    <ColumnDefinition Width="97*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Row="0">
+                    <TextBlock Foreground="White" TextAlignment="Left" VerticalAlignment="Center" Style="{StaticResource MaterialDesignDisplay3TextBlock}" Margin="42,-1,0,-1">RYZYKO</TextBlock>
+                </Grid>
+                <Grid x:Name ="Navigation" Grid.Row="1" Grid.ColumnSpan ="3" Background="#424242" Margin="-8,0,0,0" >
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0" Width="1061">
+                        <Button Height="48" Width="162" BorderBrush="#424242" Background="#424242"  >
+                            <Grid>
+                                <TextBlock Text="STOPY PROCENTOWE" HorizontalAlignment="Left" Width="139" Margin="-11,0,-10,0" />
+                            </Grid>
+                        </Button>
+                        <Button Height="Auto" Width="117" BorderBrush="#424242" Background="#424242" >
+                            <Grid>
+                                <TextBlock Text="INFLANCJA" HorizontalAlignment="Center" Width="77" Margin="0,0,-8,0" />
+                            </Grid>
+                        </Button>
+                        <Button Height="Auto" Width="124" BorderBrush="#424242" Background="#424242" >
+                            <Grid>
+                                <TextBlock Text="GOSPODARKA" HorizontalAlignment="Center" Width="109" Margin="-15,0,-17,0" />
+                            </Grid>
+                        </Button>
+                        <Button Height="Auto" Width="128" BorderBrush="#424242" Background="#424242" >
+                            <Grid>
+                                <TextBlock Text="BEZROBOCIE" HorizontalAlignment="Center" Width="86" Margin="0,0,-10,0" />
+                            </Grid>
+                        </Button>
+                        <Button Height="Auto" Width="167" BorderBrush="#424242" Background="#424242" >
+                            <Grid>
+                                <TextBlock Text="POLITYKA MONETARNA" HorizontalAlignment="Center" Width="153" Margin="-38,0,-39,0" />
+                            </Grid>
+                        </Button>
+                        <Button Height="Auto" Width="190" BorderBrush="#424242" Background="#424242" >
+                            <Grid>
+                                <TextBlock Text="STABILNOŚĆ FINANSOWA" HorizontalAlignment="Center" Width="170" Margin="-47,0" />
+                            </Grid>
+                        </Button>
+                        <Button Height="Auto" Width="172" BorderBrush="#424242" Background="#424242" >
+                            <Grid>
+                                <TextBlock Text="RYZYKO KEDYTOWE" HorizontalAlignment="Center" Width="134" Margin="-28,0,-29,0" />
+                            </Grid>
+                        </Button>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+        </ScrollViewer>
     </Grid>
+
 </UserControl>
