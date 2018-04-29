@@ -9,76 +9,99 @@
              mc:Ignorable="d" 
              FontFamily="{StaticResource MaterialDesignFont}"
              d:DesignHeight="822" d:DesignWidth="1088">
-    <Grid>
-        <Grid.Background>
-            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                <GradientStop Color="Black" Offset="0"/>
-                <GradientStop Color="Gray" Offset="1"/>
-            </LinearGradientBrush>
-        </Grid.Background>
+	<Grid>
+		<Grid.Background>
+			<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+				<GradientStop Color="Black" Offset="0"/>
+				<GradientStop Color="Gray" Offset="1"/>
+			</LinearGradientBrush>
+		</Grid.Background>
 
-        <ScrollViewer>
-            <Grid Width="1053" Height="798">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="89"/>
-                    <RowDefinition Height="48*"/>
-                    <RowDefinition Height="413*"/>
-                    <RowDefinition Height="248*"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="393"/>
-                    <ColumnDefinition Width="68*"/>
-                    <ColumnDefinition Width="97*"/>
-                </Grid.ColumnDefinitions>
-                <Grid Grid.Row="0">
-                    <TextBlock Foreground="White" TextAlignment="Left" VerticalAlignment="Center" Style="{StaticResource MaterialDesignDisplay3TextBlock}" Margin="42,-1,0,-1">RYZYKO</TextBlock>
-                </Grid>
-                <Grid x:Name ="Navigation" Grid.Row="1" Grid.ColumnSpan ="3" Background="#424242" >
-                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0" Width="1061">
-                        <Button Height="48" Width="162" BorderBrush="#424242" Background="#424242"  >
-                            <Grid>
-                                <TextBlock Text="STOPY PROCENTOWE" HorizontalAlignment="Left" Width="139" Margin="-11,0,-10,0" />
-                            </Grid>
-                        </Button>
-                        <Button Height="Auto" Width="117" BorderBrush="#424242" Background="#424242" >
-                            <Grid>
-                                <TextBlock Text="INFLANCJA" HorizontalAlignment="Center" Width="77" Margin="0,0,-8,0" />
-                            </Grid>
-                        </Button>
-                        <Button Height="Auto" Width="124" BorderBrush="#424242" Background="#424242" >
-                            <Grid>
-                                <TextBlock Text="GOSPODARKA" HorizontalAlignment="Center" Width="109" Margin="-15,0,-17,0" />
-                            </Grid>
-                        </Button>
-                        <Button Height="Auto" Width="128" BorderBrush="#424242" Background="#424242" >
-                            <Grid>
-                                <TextBlock Text="BEZROBOCIE" HorizontalAlignment="Center" Width="86" Margin="0,0,-10,0" />
-                            </Grid>
-                        </Button>
-                        <Button Height="Auto" Width="167" BorderBrush="#424242" Background="#424242" >
-                            <Grid>
-                                <TextBlock Text="POLITYKA MONETARNA" HorizontalAlignment="Center" Width="153" Margin="-38,0,-39,0" />
-                            </Grid>
-                        </Button>
-                        <Button Height="Auto" Width="190" BorderBrush="#424242" Background="#424242" >
-                            <Grid>
-                                <TextBlock Text="STABILNOŚĆ FINANSOWA" HorizontalAlignment="Center" Width="170" Margin="-47,0" />
-                            </Grid>
-                        </Button>
-                        <Button Height="Auto" Width="172" BorderBrush="#424242" Background="#424242" >
-                            <Grid>
-                                <TextBlock Text="RYZYKO KEDYTOWE" HorizontalAlignment="Center" Width="134" Margin="-28,0,-29,0" />
-                            </Grid>
-                        </Button>
-                    </StackPanel>
-                </Grid>
-                <Grid Grid.Row="2" Grid.ColumnSpan="3" Grid.RowSpan="2">
-                    <Grid.Background>
-                        <ImageBrush Stretch="Fill" ImageSource="bg.jpg" AlignmentY="Top" AlignmentX="Center" Opacity="0.3" />
-                    </Grid.Background>
-                </Grid>
-            </Grid>
-        </ScrollViewer>
-    </Grid>
+		<ScrollViewer>
+			<Grid Width="1053" Height="798">
+				<Grid.RowDefinitions>
+					<RowDefinition Height="89"/>
+					<RowDefinition Height="48*"/>
+					<RowDefinition Height="282*"/>
+					<RowDefinition Height="379*"/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="393"/>
+					<ColumnDefinition Width="203*"/>
+					<ColumnDefinition Width="457*"/>
+				</Grid.ColumnDefinitions>
+				<Grid Grid.Row="0">
+					<TextBlock Foreground="White" TextAlignment="Left" VerticalAlignment="Center" Style="{StaticResource MaterialDesignDisplay3TextBlock}" Margin="42,-1,0,-1">RYZYKO</TextBlock>
+				</Grid>
+				<Grid x:Name ="Navigation" Grid.Row="1" Grid.ColumnSpan ="3" Background="#424242" >
+					<StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0" Width="1061">
+						<Button Height="48" Width="162" BorderBrush="#424242" Background="#424242"  >
+							<Grid>
+								<TextBlock Text="STOPY PROCENTOWE" HorizontalAlignment="Left" Width="139" Margin="-11,0,-10,0" />
+							</Grid>
+						</Button>
+						<Button Height="Auto" Width="117" BorderBrush="#424242" Background="#424242" >
+							<Grid>
+								<TextBlock Text="INFLANCJA" HorizontalAlignment="Center" Width="77" Margin="0,0,-8,0" />
+							</Grid>
+						</Button>
+						<Button Height="Auto" Width="124" BorderBrush="#424242" Background="#424242" >
+							<Grid>
+								<TextBlock Text="GOSPODARKA" HorizontalAlignment="Center" Width="109" Margin="-15,0,-17,0" />
+							</Grid>
+						</Button>
+						<Button Height="Auto" Width="128" BorderBrush="#424242" Background="#424242" >
+							<Grid>
+								<TextBlock Text="BEZROBOCIE" HorizontalAlignment="Center" Width="86" Margin="0,0,-10,0" />
+							</Grid>
+						</Button>
+						<Button Height="Auto" Width="167" BorderBrush="#424242" Background="#424242" >
+							<Grid>
+								<TextBlock Text="POLITYKA MONETARNA" HorizontalAlignment="Center" Width="153" Margin="-38,0,-39,0" />
+							</Grid>
+						</Button>
+						<Button Height="Auto" Width="190" BorderBrush="#424242" Background="#424242" >
+							<Grid>
+								<TextBlock Text="STABILNOŚĆ FINANSOWA" HorizontalAlignment="Center" Width="170" Margin="-47,0" />
+							</Grid>
+						</Button>
+						<Button Height="Auto" Width="172" BorderBrush="#424242" Background="#424242" >
+							<Grid>
+								<TextBlock Text="RYZYKO KEDYTOWE" HorizontalAlignment="Center" Width="134" Margin="-28,0,-29,0" />
+							</Grid>
+						</Button>
+					</StackPanel>
+				</Grid>
+				<Grid Grid.Row="2" Grid.ColumnSpan="3" Grid.RowSpan="2">
+					<Grid.Background>
+						<ImageBrush Stretch="Fill" ImageSource="ryzyko.jpg" AlignmentY="Top" AlignmentX="Center" Opacity="0.3" />
+					</Grid.Background>
+				</Grid>
+				<Grid Grid.Row="2" Grid.ColumnSpan="3">
+					<TextBlock VerticalAlignment="Top" HorizontalAlignment="Left" TextWrapping="Wrap" Width="981" FontSize="20" Foreground="White" Style="{StaticResource MaterialDesignDisplay1TextBlock}" Margin="40,28,0,0" Height="255" >Nawet osoby niezainteresowane rynkiem FOREX wiedzą o tym, że notowania walutowe cechują się sporą zmiennością. Bezpośredni wpływ na kursy poszczególnych walut ma relacja pomiędzy popytem i podażą. Obecnie większość krajów rozwiniętych i rozwijających się stosuje system kursów płynnych. Taki wariant polityki kursowej zakłada tylko sporadyczną ingerencję państwa na rynku walutowym. W warunkach kursu płynnego, notowania walutowe są poddawane naturalnej grze sił rynkowych (popytu i podaży). <LineBreak/><LineBreak/>Czynniki oddziałujące na wysokość i zmiany kursu walutowego możemy podzielić na trzy najistotniejsze grupy: <LineBreak/>
+ •	ekonomiczne <LineBreak/>
+ •	polityczne  <LineBreak/>
+ •	psychologiczne</TextBlock>
+				</Grid>
+				<Grid Grid.Row="3">
+					<TextBlock TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Center" FontSize="20" HorizontalAlignment="Center" Foreground="White" Style="{StaticResource MaterialDesignDisplay1TextBlock}" Height="325" Margin="44,44,9,10">CZYNNIKI EKONOMICZNE: <LineBreak/>
+•	podaż walut obcych na rynku krajowym,<LineBreak/>
+•	popyt na waluty obce,<LineBreak/>
+•	różnice stóp procentowych oraz stóp inflacji na rynku obcym i krajowym,<LineBreak/>
+•	stopień reglamentacji waluty,<LineBreak/>
+•	polityka walutowa,<LineBreak/>
+•	stan gospodarki kraju oraz jego partnerów gospodarczych.
+					</TextBlock>
+				</Grid>
+				<Grid Grid.Row="3" Grid.Column="2">
+					<TextBlock TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Center" FontSize="20" HorizontalAlignment="Center" Foreground="White" Style="{StaticResource MaterialDesignDisplay1TextBlock}" Height="116" Margin="106,234,106,29" >CZYNNIKI POLITYCZNE: <LineBreak/>
+•	sytuacja międzynarodowa,<LineBreak/>
+•	napięcia polityczne.
+					</TextBlock>
+					<TextBlock TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Center" FontSize="20" HorizontalAlignment="Center" Foreground="White" Style="{StaticResource MaterialDesignDisplay1TextBlock}" Height="160" Margin="26,38,23,181" Width="408" >CZYNNIKI PSYCHOLOGOICZNE <LineBreak/> wpływające na wysokość i zmiany kursu walutowego łączą się z oczekiwaniami dotyczącymi przyszłego stanu gospodarki. <LineBreak/></TextBlock>
+				</Grid>
+			</Grid>
+		</ScrollViewer>
+	</Grid>
 
 </UserControl>
