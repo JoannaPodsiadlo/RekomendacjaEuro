@@ -25,11 +25,12 @@
         </Grid.Background>
 
         <ScrollViewer>
-            <Grid Width="1018" Height="1500">
+            <Grid Width="1018" Height="1300">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="89"/>
-                    <RowDefinition Height="273*"/>
-                    <RowDefinition Height="1138*"/>
+                    <RowDefinition Height="277*"/>
+                    <RowDefinition Height="348*"/>
+                    <RowDefinition Height="586*"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="393"/>
@@ -40,14 +41,14 @@
                     <TextBlock Foreground="White" TextAlignment="Left" VerticalAlignment="Center" Style="{StaticResource MaterialDesignDisplay3TextBlock}" Margin="42,-1,0,-1">RYZYKO</TextBlock>
                 </Grid>
 
-                <Grid Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="2">
+                <Grid Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="3">
                     <Grid.Background>
                         <ImageBrush Stretch="Fill" ImageSource="ryzyko.jpg" AlignmentY="Top" AlignmentX="Center" Opacity="0.3" />
                     </Grid.Background>
                 </Grid>
                 <Grid Grid.Row="2" Grid.ColumnSpan="3" Margin="30,23,30,0"   Background="#424242">
-					<StackPanel Background="#424242">
-						<Expander HorizontalAlignment="Stretch" Header="POZIOM STÓP PROCENTOWYYCH">
+                    <StackPanel Height="Auto" Margin="0,0,0,-282" >
+                        <Expander HorizontalAlignment="Stretch" Header="POZIOM STÓP PROCENTOWYYCH">
                             <StackPanel Orientation="Vertical" TextBlock.Foreground="{DynamicResource MaterialDesignBody}" Margin="24,8,24,16">
                                 <TextBlock Opacity=".68" Text="Wzrost stóp procentowych zwiększa zapotrzebowanie na krajową walutę, ponieważ inwestorzy chcą lokować pieniądze w danym państwie. Jeżeli podaż waluty jest stabilna, to wzrost zainteresowania ze strony inwestorów skutkuje podwyżką kursu. Spadek stóp procentowych ma odwrotny wpływ na notowania krajowej waluty." TextWrapping="Wrap" />
                                 <TextBlock Text="Przykład" />
