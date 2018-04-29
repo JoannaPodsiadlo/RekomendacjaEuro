@@ -63,6 +63,7 @@
     <Compile Include="ViewModels\AktViewModel.cs" />
     <Compile Include="ViewModels\ONasViewModel.cs" />
     <Compile Include="ViewModels\PrognozaViewModel.cs" />
+    <Compile Include="ViewModels\Ryzyko1ViewModel.cs" />
     <Compile Include="ViewModels\RyzykoViewModel.cs" />
     <Compile Include="ViewModels\StartViewModel.cs" />
     <Compile Include="ViewModels\TestViewModel.cs" />
@@ -74,6 +75,9 @@
     </Compile>
     <Compile Include="Views\PrognozaView.xaml.cs">
       <DependentUpon>PrognozaView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Ryzyko1View.xaml.cs">
+      <DependentUpon>Ryzyko1View.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\RyzykoView.xaml.cs">
       <DependentUpon>RyzykoView.xaml</DependentUpon>
@@ -108,6 +112,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\PrognozaView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Ryzyko1View.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -12,23 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using IE.ViewModels;
 
 namespace IE.Views
 {
 	/// <summary>
-	/// Logika interakcji dla klasy RyzykoView.xaml
+	/// Logika interakcji dla klasy Ryzyko1View.xaml
 	/// </summary>
-	public partial class RyzykoView : UserControl
+	public partial class Ryzyko1View : UserControl
 	{
-		public RyzykoView()
+		public Ryzyko1View()
 		{
 			InitializeComponent();
-		}
-
-		private void ButtonRyzyko1_Click(object sender, RoutedEventArgs e)
-		{
-			DataContext = new Ryzyko1View();
 		}
 	}
 }

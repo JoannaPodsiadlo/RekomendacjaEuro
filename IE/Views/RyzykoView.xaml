@@ -3,12 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-              xmlns:materialDesign1="http://materialdesigninxaml.net/winfx/xaml/themes"
-        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:materialDesign1="http://materialdesigninxaml.net/winfx/xaml/themes"
+			 xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:local="clr-namespace:IE.Views"
+			 xmlns:viewmodels="clr-namespace:IE.ViewModels"
+			 xmlns:views="clr-namespace:IE.Views"
              mc:Ignorable="d" 
              FontFamily="{StaticResource MaterialDesignFont}"
              d:DesignHeight="822" d:DesignWidth="1088">
+	<UserControl.Resources>
+		<DataTemplate x:Name="ryzyko1ViewTemplate" DataType="{x:Type viewmodels:Ryzyko1ViewModel}">
+			<views:Ryzyko1View DataContext="{Binding}"/>
+		</DataTemplate>
+	</UserControl.Resources>
 	<Grid>
 		<Grid.Background>
 			<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -34,8 +41,8 @@
 					<TextBlock Foreground="White" TextAlignment="Left" VerticalAlignment="Center" Style="{StaticResource MaterialDesignDisplay3TextBlock}" Margin="42,-1,0,-1">RYZYKO</TextBlock>
 				</Grid>
 				<Grid x:Name ="Navigation" Grid.Row="1" Grid.ColumnSpan ="3" Background="#424242" >
-					<StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0" Width="1061">
-						<Button Height="48" Width="162" BorderBrush="#424242" Background="#424242"  >
+					<StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0" Width="1061" >
+						<Button x:Name="ButtonRyzyko1" Height="Auto" Width="162" BorderBrush="#424242" Background="#424242" Click="ButtonRyzyko1_Click" >
 							<Grid>
 								<TextBlock Text="STOPY PROCENTOWE" HorizontalAlignment="Left" Width="139" Margin="-11,0,-10,0" />
 							</Grid>
@@ -103,5 +110,4 @@
 			</Grid>
 		</ScrollViewer>
 	</Grid>
-
 </UserControl>
