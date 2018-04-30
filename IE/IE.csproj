@@ -179,9 +179,6 @@
     <Resource Include="Views\my3.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="bg.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Views\bg.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -189,6 +186,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Views\ryzyko2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bG2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
