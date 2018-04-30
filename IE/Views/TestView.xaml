@@ -4,32 +4,53 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:IE.Views"
+             xmlns:integration="clr-namespace:System.Windows.Forms.Integration;assembly=WindowsFormsIntegration"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid RenderTransformOrigin="0.267,0.58" Margin="-14,0,0,-50" Background="#FFE5E5E1">
-        <Grid  Opacity="0.8" Background="#FF424242" HorizontalAlignment="Left" Height="343" Margin="24,51,0,0" VerticalAlignment="Top" Width="404">
-            <Label Content="Bierzesz udział w internetowej licytacji dzieł sztuki, które może &#xD;&#xA;przynieść Ci ogromne zyski. Jesteś już bliski wygranej, ale nagle &#xD;&#xA;tracisz połączenie internetowe. Do końca licytacji pozostało 10 min.,&#xD;&#xA;co robisz?" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.468,0.661" Width="399" Height="72" FontWeight="Bold" Opacity="0.8" Foreground="#DDFEFEFE" />
-            <Label Content="Dzwonisz zdenerwowany na inflonię operatora &#xD;&#xA;sieci i każesz im jak najszybciej to naprawić, pod&#xD;&#xA;groźbą rezygnacji z ich usług" HorizontalAlignment="Left" Height="61" Margin="26,94,0,0" VerticalAlignment="Top" Width="278" Opacity="0.9" Foreground="#DDFEFEFE"/>
-            <CheckBox x:Name="CheckBox1b" Content="" Height="21" Margin="0,163,383,0" VerticalAlignment="Top" RenderTransformOrigin="0.869,1.441" HorizontalAlignment="Right" Width="21" Checked="CheckBox1b_Checked" BorderBrush="#FFE9EDF1" Background="#FFEAEFF2"/>
-            <Label Content="Dzwonisz opanowany  i spokojnie pytasz co się &#xD;&#xA;stało" HorizontalAlignment="Left" Height="45" Margin="26,155,0,0" VerticalAlignment="Top" Width="278" Opacity="0.9" Foreground="#DDFEFEFE"/>
-            <CheckBox x:Name="CheckBox1c" Content="" Height="21" Margin="0,205,378,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="26" Background="#FFEAEAEA" BorderBrush="#FFE1E6EA" Checked="CheckBox1c_Checked" />
-            <Label Content="Jesteś w takiej furii, że nie jesteś w stanie &#xD;&#xA;nawet zadzwonić" HorizontalAlignment="Left" Height="43" Margin="26,200,0,0" VerticalAlignment="Top" Width="278" Opacity="0.9" Foreground="#DDFEFEFE"/>
-            <CheckBox x:Name="CheckBox1d" Checked="CheckBox1d_Checked" Content="CheckBox" Height="25" Margin="0,248,383,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="21" BorderBrush="#FFE7EFF5" Background="#FFE6EBF0"/>
-            <Label Content="Dochodzisz do wniosku, że nie ma się czym &#xD;&#xA;przejmować" HorizontalAlignment="Left" Height="45" Margin="26,248,0,0" VerticalAlignment="Top" Width="278" Opacity="0.9" Foreground="#DDFEFEFE"/>
-            <CheckBox x:Name="CheckBox1a" Content="" Checked="CheckBox1a_Checked" Height="28" Margin="0,94,383,0" VerticalAlignment="Top" Foreground="#DDFEFEFE" Background="#FFF8F9FA" BorderBrush="#FFF5F6F6"/>
-        </Grid>
-        <Label Content="Dostajesz propozycję, aby wybrać 1 z 10  spadochronów&#xD;&#xA;i skoczyć, ale wiesz, że jeden z nich jest wadliwy. &#xD;&#xA;&#xD;&#xA;Wpisz cenę, &#xD;&#xA;jaką musieliby Ci zapłacić, &#xD;&#xA;abyś to zrobił." HorizontalAlignment="Left" Height="107" Margin="455,51,0,0" VerticalAlignment="Top" Width="349" FontWeight="Bold" FontFamily="Alef" Opacity="0.7" Background="#FFABA01B"/>
-        <TextBox x:Name="Cena" HorizontalAlignment="Left" Height="26" Margin="640,106,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="104" CaretBrush="#FFFAFAF5" SelectionBrush="#FFEAEAE0" />
-        <Label Content="Jeśli Twoje całkowite wydatki wynoszą miesięcznie 3 tys.&#xD;&#xA;zł, a możesz zaoszczędzić 50 tys. zł kupując mieszkanie w &#xD;&#xA;nieprestiżowej dzielnicy to zyskujesz kwotę wystarczającą&#xD;&#xA;na utrzymanie się przez ponad rok czasu bez pracy. Czy &#xD;&#xA;podjąłbyś decyzję zakupu takiego mieszkania?" HorizontalAlignment="Left" Height="121" Margin="455,172,0,0" VerticalAlignment="Top" Width="349" FontWeight="Bold" FontFamily="Alef" Opacity="0.7" Background="#FFF6F6ED"/>
-        <CheckBox x:Name="Tak3" Content="Tak" HorizontalAlignment="Left" Height="30" Margin="507,263,0,0" VerticalAlignment="Top" Width="100" Checked="Tak3_Checked" Opacity="0.9" Background="#FFF0E258" BorderBrush="#FFE9EBEC"/>
-        <CheckBox x:Name="Nie3" Content="Nie" HorizontalAlignment="Left" Height="30" Margin="615,263,0,0" VerticalAlignment="Top" Width="107" Checked="Nie3_Checked"  Opacity="0.9" Background="#FFF0E258" BorderBrush="#FFF8F8F9"/>
-        <Label Background="#FFDADACD" Content="Właśnie spłaciłeś kredyt na samochód, ale wyszedł nowy&#xD;&#xA;model, który bardzo przypadł Ci do gustu. Czy weźmiesz &#xD;&#xA;kolejny kredyt , aby kupić nowe auto?" HorizontalAlignment="Left" Height="86" Margin="455,306,0,0" VerticalAlignment="Top" Width="349" FontWeight="Bold" FontFamily="Alef" Opacity="0.8" OpacityMask="Black"/>
-        <CheckBox x:Name="Tak4" Checked="Tak4_Checked"  Content="Tak" HorizontalAlignment="Left" Height="25" Margin="507,367,0,0" VerticalAlignment="Top" Width="100" BorderBrush="#FFEEF2F6" Background="#FFF0E258"/>
-        <CheckBox x:Name="Nie4" Checked="Nie4_Checked"  Content="Nie" HorizontalAlignment="Left" Height="25" Margin="615,367,0,0" VerticalAlignment="Top" Width="104" Background="#FFF0E258" BorderBrush="#FFEAF0F5"/>
-        <Button Content="Zatwierdź" HorizontalAlignment="Left" Height="25" Margin="479,421,0,0" VerticalAlignment="Top" Width="292" Click="Button_Click" Background="#FFABA01B" BorderBrush="#FF797E7E" />
+             FontFamily="{StaticResource MaterialDesignFont}"
+             d:DesignHeight="822" d:DesignWidth="1088">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="0"/>
+                <GradientStop Color="Gray" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <ScrollViewer>
+            <Grid Width="1018" Height="900">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="89"/>
+                    <RowDefinition Height="900"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <TextBlock Foreground="White" TextAlignment="Left" VerticalAlignment="Center" Style="{StaticResource MaterialDesignDisplay3TextBlock}" Margin="42,-1,0,-1">TEST</TextBlock>
+                </Grid>
+                <Grid Grid.Row="1">
 
+                    <Grid.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="pyt.jpg" AlignmentY="Top" AlignmentX="Center" Opacity="0.3" />
+                    </Grid.Background>
 
+                    <Frame Background="White" Opacity="0.7" Content="" HorizontalAlignment="Left" Height="584" Margin="76,71,0,0" VerticalAlignment="Top" Width="868" x:Name="py1"/>
 
+                    <Button Canvas.Left="47" Canvas.Top="605" Content="Zatwierdź" Height="59" x:Name="NextPytContent" Width="310"  Background="#FF607D8B" BorderBrush="#FF607D8B" Margin="350,660,358,181" Click="NextPytContent_Click" />
+                    <TextBlock Style="{StaticResource MaterialDesignDisplay1TextBlock}" HorizontalAlignment="Left" Height="91" Margin="93,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="831"><Run Text="Odpowiedz na pytania"/><Run Text=" i"/><Run Text=" sprawd"/><Run Text="ź"/><Run Text=" własny poziom"/><Run Text=" "/><Run Text="ryzyka"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Height="245" Margin="93,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="470" Background="#FFB0BEC5"><Run Text=" "/><LineBreak/><Run Text="1"/><Run Text=". "/><Run Text="Bierzesz udział w internetowej licytacji dzieła sztuki. Jesteś "/><Run Text="  "/><Run Text="już bliski wygranej, ale nagle tracisz połączenie internetowe. Do końca licytacji pozostało 10 minut, co robisz?"/></TextBlock>
+                    <CheckBox x:Name="Odp1a" Content="Dzwonisz zdenerwowany do operatora sieci i każesz im jak najszybciej to naprawić" HorizontalAlignment="Left" Height="38" Margin="93,237,0,0" VerticalAlignment="Top" Width="470"/>
+                    <CheckBox x:Name="Odp1d" Content="Dochodzisz do wniosku, że nie ma się czym przejmować" HorizontalAlignment="Left" Height="38" Margin="93,351,0,0" VerticalAlignment="Top" Width="395"/>
+                    <CheckBox x:Name="Odp1c" Content="Jesteś w takiej furii, że nie jesteś nawet w stanie zadzwonić" HorizontalAlignment="Left" Height="38" Margin="93,313,0,0" VerticalAlignment="Top" Width="395"/>
+                    <CheckBox x:Name="Odp1b" Content="Dzwonisz opanowany i spokojnie pytasz co się stało" HorizontalAlignment="Left" Height="38" Margin="93,275,0,0" VerticalAlignment="Top" Width="395"/>
+                    <TextBlock HorizontalAlignment="Left" Height="151" Margin="93,431,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="470" Background="#FF90A4AE"><Run/><LineBreak/><Run Text="2. Dostajesz propozycję, aby wybrac jeden  zdziesięciu spadochronow i skoczyć, ale wiesz, że jest wśród nich wadliwy. Wpisz cenę, jaką musieliby Ci zapłacić, abyś to zrobił."/></TextBlock>
+                    <TextBox x:Name="Odp2" HorizontalAlignment="Left" Height="40" Margin="204,498,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="239" CaretBrush="#FF90A4AE" SelectionBrush="#FF455A64" Background="#FFB0BEC5"/>
+                    <TextBlock HorizontalAlignment="Left" Height="245" Margin="589,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="335" Background="#FF455A64"><Run/><LineBreak/><Run Text="3. Jeśli Twoje całkowite wydatki wynoszą miesięcznie 3 tys. zł., a możesz oszczędzić 50 tys. zł kupując mieszkanie w nieprestiżowej dzielnicy to zyskujesz kwotę wystarczającą n autrzymanie się przez ponad rok czasu bez pracy. Czy podjąłbyś decyzję zakupu takiego mieszkania?"/></TextBlock>
+                    <CheckBox x:Name="Odp3tak" Content="Tak" HorizontalAlignment="Left" Height="54" Margin="610,254,0,0" VerticalAlignment="Top" Width="314"/>
+                    <CheckBox x:Name="Odp3nie" Content="Nie" HorizontalAlignment="Left" Height="54" Margin="610,305,0,0" VerticalAlignment="Top" Width="314"/>
+                    <CheckBox x:Name="Odp3moze" Content="Nie jestem pewien" HorizontalAlignment="Left" Height="54" Margin="610,351,0,0" VerticalAlignment="Top" Width="314"/>
+                    <TextBlock HorizontalAlignment="Left" Height="151" Margin="589,431,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="335" Background="#FFECEFF1"><Run/><LineBreak/><Run Text="4. Właśnie spłaciłeś kredyt za samochód, ale wyszedł nowy model, który  bardzo przypadl Ci do gustu . Czy weźmiesz kolejny kredyt , aby kupić nowe auto?"/></TextBlock>
+                    <CheckBox x:Name="Odp4tak" Content="Tak" HorizontalAlignment="Left" Height="40" Margin="610,498,0,0" VerticalAlignment="Top" Width="314"/>
+                    <CheckBox x:Name="Odp4nie" Content="Nie" HorizontalAlignment="Left" Height="31" Margin="610,538,0,0" VerticalAlignment="Top" Width="314"/>
+                </Grid>
+            </Grid>
+        </ScrollViewer>
 
     </Grid>
 </UserControl>

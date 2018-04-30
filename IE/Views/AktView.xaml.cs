@@ -23,6 +23,23 @@ namespace IE.Views
         public AktView()
         {
             InitializeComponent();
+            frame1.Navigate(new Uri("https://www.paszport.ws/"));
+           
+        }
+
+        private void btn1Content_Click(object sender, RoutedEventArgs e)
+        {
+            frame1.Navigate(new Uri("https://www.paszport.ws/")); //dziala ok jak sie nacisnie Tak, jeden skrypt wyrzuca(ewentualnie)
+        }
+
+        private void btn3Content_Click(object sender, RoutedEventArgs e)
+        {
+            frame1.Navigate(new Uri("https://www.bankier.pl/waluty")); //ok
+        }
+
+        private void btn2Content_Click(object sender, RoutedEventArgs e)
+        {
+            frame1.Navigate(new Uri("http://waluty.com.pl/s30-wiadomosci___rynek_walutowy__forex.html"));//wyrzuca kilka skryptow(2)
         }
     }
 }

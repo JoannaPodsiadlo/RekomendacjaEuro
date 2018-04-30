@@ -5,8 +5,48 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:IE.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Background="Red">
-            
+             FontFamily="{StaticResource MaterialDesignFont}"
+             d:DesignHeight="822" d:DesignWidth="1088">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="0"/>
+                <GradientStop Color="Gray" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <ScrollViewer>
+            <Grid Width="1018" Height="900">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="89"/>
+                    <RowDefinition Height="850"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <TextBlock Foreground="White" TextAlignment="Left" VerticalAlignment="Center" Style="{StaticResource MaterialDesignDisplay3TextBlock}" Margin="42,-1,0,-1">AKTUALNOŚCI</TextBlock>
+                </Grid>
+                <Grid Grid.Row="1">
+
+                    <Grid.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="news.jpg" AlignmentY="Top" AlignmentX="Center" Opacity="0.3" />
+                    </Grid.Background>
+
+                    <Canvas>
+                        <Frame x:Name="frame1" Width="930" Height="508" Background="LightGray" Canvas.Left="47" Canvas.Top="49">
+                            <Frame.BitmapEffect>
+                                <DropShadowBitmapEffect />
+                            </Frame.BitmapEffect>
+                        </Frame>
+                        <Button Canvas.Left="47" Canvas.Top="605" Content="Paszport do Wallstreet" Height="59" x:Name="btn1Content" Width="310" Click="btn1Content_Click" Background="#FF880E4F" BorderBrush="#FF880E4F" />
+                        <Button Canvas.Left="667" Canvas.Top="605" Content="Rynek walutowy Forex" Height="59" x:Name="btn2Content" Width="310" Click="btn2Content_Click" Background="#FF880E4F" BorderBrush="#FF880E4F" />
+                        <Button Canvas.Left="357" Canvas.Top="605" Content="Aktualny kurs EURO" Height="59" x:Name="btn3Content" Width="310" Click="btn3Content_Click" BorderBrush="#FF880E4F" Background="#FF880E4F" />
+                    </Canvas>
+                    <Canvas/>
+                    <Canvas/>
+                    <Canvas/>
+                </Grid>
+            </Grid>
+        </ScrollViewer>
     </Grid>
+
+
 </UserControl>
