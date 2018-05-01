@@ -8,79 +8,77 @@
              xmlns:local="clr-namespace:IE.Views"
 			 xmlns:viewmodels="clr-namespace:IE.ViewModels"
 			 xmlns:views="clr-namespace:IE.Views"
+			 TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+			 TextBlock.Foreground="{DynamicResource MaterialDesignBody}"
              mc:Ignorable="d" 
              FontFamily="{StaticResource MaterialDesignFont}"
              d:DesignHeight="822" d:DesignWidth="1088">
-    <UserControl.Resources>
-        <DataTemplate x:Name="ryzyko1ViewTemplate" DataType="{x:Type viewmodels:Ryzyko1ViewModel}">
-            <views:Ryzyko1View DataContext="{Binding}"/>
-        </DataTemplate>
-    </UserControl.Resources>
-    <Grid>
-        <Grid.Background>
-            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                <GradientStop Color="Black" Offset="0"/>
-                <GradientStop Color="Gray" Offset="1"/>
-            </LinearGradientBrush>
-        </Grid.Background>
+	<UserControl.Resources>
+	</UserControl.Resources>
+	<Grid>
+		<Grid.Background>
+			<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+				<GradientStop Color="Black" Offset="0"/>
+				<GradientStop Color="Gray" Offset="1"/>
+			</LinearGradientBrush>
+		</Grid.Background>
 
-        <ScrollViewer>
-            <Grid Width="1018" Height="1300">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="89"/>
-                    <RowDefinition Height="277*"/>
-                    <RowDefinition Height="348*"/>
-                    <RowDefinition Height="586*"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="393"/>
-                    <ColumnDefinition Width="203*"/>
-                    <ColumnDefinition Width="457*"/>
-                </Grid.ColumnDefinitions>
-                <Grid Grid.Row="0">
-                    <TextBlock Foreground="White" TextAlignment="Left" VerticalAlignment="Center" Style="{StaticResource MaterialDesignDisplay3TextBlock}" Margin="42,-1,0,-1">RYZYKO</TextBlock>
-                </Grid>
+		<ScrollViewer>
+			<Grid Width="1018" Height="1499">
+				<Grid.RowDefinitions>
+					<RowDefinition Height="89"/>
+					<RowDefinition Height="558*"/>
+					<RowDefinition Height="85*"/>
+					<RowDefinition Height="767*"/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="393"/>
+					<ColumnDefinition Width="203*"/>
+					<ColumnDefinition Width="457*"/>
+				</Grid.ColumnDefinitions>
+				<Grid Grid.Row="0">
+					<TextBlock TextAlignment="Left" VerticalAlignment="Center" Style="{StaticResource MaterialDesignDisplay3TextBlock}" Margin="42,-1,0,-1">RYZYKO</TextBlock>
+				</Grid>
 
-                <Grid Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="3">
-                    <Grid.Background>
-                        <ImageBrush Stretch="Fill" ImageSource="ryzyko.jpg" AlignmentY="Top" AlignmentX="Center" Opacity="0.3" />
-                    </Grid.Background>
-                </Grid>
-                <Grid Grid.Row="2" Grid.ColumnSpan="3" Margin="30,23,30,0"   Background="#424242">
-                    <StackPanel Height="Auto" Margin="0,0,0,-282" >
-                        <Expander HorizontalAlignment="Stretch" Header="POZIOM STÓP PROCENTOWYYCH">
-                            <StackPanel Orientation="Vertical" TextBlock.Foreground="{DynamicResource MaterialDesignBody}" Margin="24,8,24,16">
-                                <TextBlock Opacity=".68" Text="Wzrost stóp procentowych zwiększa zapotrzebowanie na krajową walutę, ponieważ inwestorzy chcą lokować pieniądze w danym państwie. Jeżeli podaż waluty jest stabilna, to wzrost zainteresowania ze strony inwestorów skutkuje podwyżką kursu. Spadek stóp procentowych ma odwrotny wpływ na notowania krajowej waluty." TextWrapping="Wrap" />
-                                <TextBlock Text="Przykład" />
-                                <TextBlock Opacity=".68" Text=" Przykład z 23 lutego 2011 r. Kurs euro w stosunku do dolara amerykańskiego wzrósł z 1,3428 do 1,3745, gdy pojawiły się sugestie, że stopy procentowe na terenie Strefy Euro zostaną podniesione szybciej niż w USA. Zmiana nastawienia inwestorów była spowodowana interpretacją komunikatów Europejskiego Banku Centralnego." TextWrapping="Wrap" />
-                            </StackPanel>
-                        </Expander>
-                        <Expander HorizontalAlignment="Stretch" Header="POZIOM INFLACJI">
-                            <StackPanel Orientation="Vertical" TextBlock.Foreground="{DynamicResource MaterialDesignBody}" Margin="24,8,24,16">
-                                <TextBlock Opacity=".68" Text="W dłuższej perspektywie wzrost krajowych cen sprawia, że towary eksportowe stają się mniej konkurencyjne. Główni partnerzy handlowi państwa, które doświadcza wyższej inflacji, potrzebują mniej waluty do importu towarów. W warunkach stabilnej podaży spadek popytu na krajową walutę powoduje jej osłabienie. " TextWrapping="Wrap" />
-                                <TextBlock Opacity=".68" Text="W krótkiej perspektywie czasowej niska inflacja redukuje szanse na podwyżki stóp procentowych. Dlatego inwestorzy są mniej zainteresowani krajową walutą. Spadek popytu oznacza obniżkę jej notowań. Informacja o szybkich wzrostach cen zwiastuje natomiast podwyżki stóp procentowych. W efekcie inwestorzy chętniej nabywają krajową walutę, a popyt spekulacyjny podwyższa jej kurs." TextWrapping="Wrap" />
-                                <TextBlock Text="PRZYKŁAD" />
-                                <TextBlock Opacity=".68" Text=" Przykład z 16 lipca 2014 r. Kurs funta brytyjskiego w stosunku do euro osiągnął najwyższy poziom od dwóch lat (1,2630). Inwestorzy walutowi zareagowali na dane dotyczące cen. W czerwcu brytyjska inflacja była o 0,30 punktu procentowego wyższa od oczekiwań analityków." TextWrapping="Wrap" />
-                            </StackPanel>
-                        </Expander>
-                        <Expander HorizontalAlignment="Stretch" Header="TEMPO WZROSTU GOSPODARCZEGO">
-                            <StackPanel Orientation="Vertical" TextBlock.Foreground="{DynamicResource MaterialDesignBody}" Margin="24,8,24,16">
-                                <TextBlock Opacity=".68" Text="W dłuższej perspektywie szybki wzrost gospodarczy stymuluje import dóbr i usług przez krajowych producentów. Większa aktywność importerów oznacza wzrost ilości krajowej waluty na rynku międzynarodowym i spadek jej kursu. Niższe tempo wzrostu gospodarczego zmniejsza zapotrzebowanie krajowych importerów na zagraniczne towary i skutkuje wzrostem notowań waluty. Niskie tempo wzrostu gospodarczego zniechęca posiadaczy kapitału do zakupu krajowych aktywów (np. obligacji). Mniejsze zainteresowanie ze strony inwestorów zagranicznych skutkuje osłabieniem krajowego pieniądza. " TextWrapping="Wrap" />
-                                <TextBlock Text="PRZYKŁAD" />
-                                <TextBlock Opacity=".68" Text="Przykład z 30 sierpnia 2012 r. Złoty osłabił się w stosunku do euro o 2 grosze (zmiana kursu z 4,17 do 4,19), gdy Główny Urząd Statystyczny przedstawił kwartalne dane na temat wzrostu Produktu Krajowego Brutto (PKB). Informacje zebrane przez GUS okazały się gorsze od oczekiwań inwestorów." TextWrapping="Wrap" />
-                            </StackPanel>
-                        </Expander>
-                        <Expander HorizontalAlignment="Stretch" Header="STOPA BEZROBOCIA">
-                            <StackPanel Orientation="Vertical" TextBlock.Foreground="{DynamicResource MaterialDesignBody}" Margin="24,8,24,16">
-                                <TextBlock Opacity=".68" Text="W dłuższej perspektywie wzrost krajowego bezrobocia oznacza spadek popytu na dobra importowane. Osłabienie aktywności importerów skutkuje wzrostem kursu waluty, bo mniejsza ilość krajowego pieniądza trafia na rynek międzynarodowy. Spadek bezrobocia zwiększa ilość transakcji zawieranych przez importerów i przyczynia się do osłabienia krajowej waluty. W krótkiej perspektywie czasowej wzrost bezrobocia zniechęca zagranicznych inwestorów i skutkuje spadkiem notowań krajowej waluty. Spadek bezrobocia wzmaga popyt na lokalną walutę, ponieważ posiadacze kapitału upatrują większe szanse na osiągnięcie zysków w danym kraju. " TextWrapping="Wrap" />
-                                <TextBlock Text="PRZYKŁAD" />
-                                <TextBlock Opacity=".68" Text="Przykład z 6 czerwca 2014 r. Kurs dolara kanadyjskiego w stosunku do jego amerykańskiego odpowiednika spadł o 0,12%. Przyczyną tej zmiany były niepokojące sygnały z Kanady. Tamtejsza stopa bezrobocia w maju nieoczekiwanie wzrosła do 7,00%. Inwestorzy nie spodziewali się takiej zmiany." TextWrapping="Wrap" />
-                            </StackPanel>
-                        </Expander>
-                        <Expander HorizontalAlignment="Stretch" Header="POLITYKA MONETARNA KRAJÓW">
-                            <StackPanel Orientation="Vertical" TextBlock.Foreground="{DynamicResource MaterialDesignBody}" Margin="24,8,24,16">
-                                <TextBlock Text="Your Content" />
-                                <TextBlock Opacity=".68" Text="Państwo podjąć może szereg decyzji mających na celu obniżenie lub podwyższenie kursu walutowego. Dewaluacja, czyli obniżenie kursu w porównaniu z walutami obcymi oraz złotem ma na celu poprawienie konkurencyjności krajowych towarów, poprzez spadek ich cen na rynkach zagranicznych. Natomiast rewaluacja, podwyższenie kursu krajowej waluty, osłabi tendencje inflacyjne w gospodarce, przez spadek cen towarów, które są importowane do kraju.
+				<Grid Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="3" Margin="0,0,0,-67">
+					<Grid.Background>
+						<ImageBrush Stretch="Fill" ImageSource="ryzyko.jpg" AlignmentY="Top" AlignmentX="Center" Opacity="0.3" />
+					</Grid.Background>
+				</Grid>
+				<Grid Grid.Row="3" Grid.ColumnSpan="3" Margin="30,16,30,464" >
+					<StackPanel Height="Auto" Margin="14,0,0,-570" Background="Transparent" >
+						<Expander HorizontalAlignment="Stretch" Header="POZIOM STÓP PROCENTOWYYCH">
+							<StackPanel Orientation="Vertical" TextBlock.Foreground="{DynamicResource MaterialDesignBody}" Margin="24,8,24,16">
+								<TextBlock  Opacity=".68" Text="Wzrost stóp procentowych zwiększa zapotrzebowanie na krajową walutę, ponieważ inwestorzy chcą lokować pieniądze w danym państwie. Jeżeli podaż waluty jest stabilna, to wzrost zainteresowania ze strony inwestorów skutkuje podwyżką kursu. Spadek stóp procentowych ma odwrotny wpływ na notowania krajowej waluty." TextWrapping="Wrap" />
+								<TextBlock Text="Przykład" />
+								<TextBlock Opacity=".68" Text=" Przykład z 23 lutego 2011 r. Kurs euro w stosunku do dolara amerykańskiego wzrósł z 1,3428 do 1,3745, gdy pojawiły się sugestie, że stopy procentowe na terenie Strefy Euro zostaną podniesione szybciej niż w USA. Zmiana nastawienia inwestorów była spowodowana interpretacją komunikatów Europejskiego Banku Centralnego." TextWrapping="Wrap" />
+							</StackPanel>
+						</Expander>
+						<Expander HorizontalAlignment="Stretch" Header="POZIOM INFLACJI">
+							<StackPanel Orientation="Vertical" TextBlock.Foreground="{DynamicResource MaterialDesignBody}" Margin="24,8,24,16">
+								<TextBlock Opacity=".68" Text="W dłuższej perspektywie wzrost krajowych cen sprawia, że towary eksportowe stają się mniej konkurencyjne. Główni partnerzy handlowi państwa, które doświadcza wyższej inflacji, potrzebują mniej waluty do importu towarów. W warunkach stabilnej podaży spadek popytu na krajową walutę powoduje jej osłabienie. " TextWrapping="Wrap" />
+								<TextBlock Opacity=".68" Text="W krótkiej perspektywie czasowej niska inflacja redukuje szanse na podwyżki stóp procentowych. Dlatego inwestorzy są mniej zainteresowani krajową walutą. Spadek popytu oznacza obniżkę jej notowań. Informacja o szybkich wzrostach cen zwiastuje natomiast podwyżki stóp procentowych. W efekcie inwestorzy chętniej nabywają krajową walutę, a popyt spekulacyjny podwyższa jej kurs." TextWrapping="Wrap" />
+								<TextBlock Text="PRZYKŁAD" />
+								<TextBlock Opacity=".68" Text=" Przykład z 16 lipca 2014 r. Kurs funta brytyjskiego w stosunku do euro osiągnął najwyższy poziom od dwóch lat (1,2630). Inwestorzy walutowi zareagowali na dane dotyczące cen. W czerwcu brytyjska inflacja była o 0,30 punktu procentowego wyższa od oczekiwań analityków." TextWrapping="Wrap" />
+							</StackPanel>
+						</Expander>
+						<Expander HorizontalAlignment="Stretch" Header="TEMPO WZROSTU GOSPODARCZEGO">
+							<StackPanel Orientation="Vertical" TextBlock.Foreground="{DynamicResource MaterialDesignBody}" Margin="24,8,24,16">
+								<TextBlock Opacity=".68" Text="W dłuższej perspektywie szybki wzrost gospodarczy stymuluje import dóbr i usług przez krajowych producentów. Większa aktywność importerów oznacza wzrost ilości krajowej waluty na rynku międzynarodowym i spadek jej kursu. Niższe tempo wzrostu gospodarczego zmniejsza zapotrzebowanie krajowych importerów na zagraniczne towary i skutkuje wzrostem notowań waluty. Niskie tempo wzrostu gospodarczego zniechęca posiadaczy kapitału do zakupu krajowych aktywów (np. obligacji). Mniejsze zainteresowanie ze strony inwestorów zagranicznych skutkuje osłabieniem krajowego pieniądza. " TextWrapping="Wrap" />
+								<TextBlock Text="PRZYKŁAD" />
+								<TextBlock Opacity=".68" Text="Przykład z 30 sierpnia 2012 r. Złoty osłabił się w stosunku do euro o 2 grosze (zmiana kursu z 4,17 do 4,19), gdy Główny Urząd Statystyczny przedstawił kwartalne dane na temat wzrostu Produktu Krajowego Brutto (PKB). Informacje zebrane przez GUS okazały się gorsze od oczekiwań inwestorów." TextWrapping="Wrap" />
+							</StackPanel>
+						</Expander>
+						<Expander HorizontalAlignment="Stretch" Header="STOPA BEZROBOCIA">
+							<StackPanel Orientation="Vertical" TextBlock.Foreground="{DynamicResource MaterialDesignBody}" Margin="24,8,24,16">
+								<TextBlock Opacity=".68" Text="W dłuższej perspektywie wzrost krajowego bezrobocia oznacza spadek popytu na dobra importowane. Osłabienie aktywności importerów skutkuje wzrostem kursu waluty, bo mniejsza ilość krajowego pieniądza trafia na rynek międzynarodowy. Spadek bezrobocia zwiększa ilość transakcji zawieranych przez importerów i przyczynia się do osłabienia krajowej waluty. W krótkiej perspektywie czasowej wzrost bezrobocia zniechęca zagranicznych inwestorów i skutkuje spadkiem notowań krajowej waluty. Spadek bezrobocia wzmaga popyt na lokalną walutę, ponieważ posiadacze kapitału upatrują większe szanse na osiągnięcie zysków w danym kraju. " TextWrapping="Wrap" />
+								<TextBlock Text="PRZYKŁAD" />
+								<TextBlock Opacity=".68" Text="Przykład z 6 czerwca 2014 r. Kurs dolara kanadyjskiego w stosunku do jego amerykańskiego odpowiednika spadł o 0,12%. Przyczyną tej zmiany były niepokojące sygnały z Kanady. Tamtejsza stopa bezrobocia w maju nieoczekiwanie wzrosła do 7,00%. Inwestorzy nie spodziewali się takiej zmiany." TextWrapping="Wrap" />
+							</StackPanel>
+						</Expander>
+						<Expander HorizontalAlignment="Stretch" Header="POLITYKA MONETARNA KRAJÓW">
+							<StackPanel Orientation="Vertical" TextBlock.Foreground="{DynamicResource MaterialDesignBody}" Margin="24,8,24,16">
+								<TextBlock Opacity=".68" Text="Państwo podjąć może szereg decyzji mających na celu obniżenie lub podwyższenie kursu walutowego. Dewaluacja, czyli obniżenie kursu w porównaniu z walutami obcymi oraz złotem ma na celu poprawienie konkurencyjności krajowych towarów, poprzez spadek ich cen na rynkach zagranicznych. Natomiast rewaluacja, podwyższenie kursu krajowej waluty, osłabi tendencje inflacyjne w gospodarce, przez spadek cen towarów, które są importowane do kraju.
 Do banków centralnych, których działania są szczególnie istotne dla inwestorów zaliczamy:
 •	USA – Bank Rezerwy Federalnej (Fed) 
 •	Strefa euro – Europejski Bank Centralny (ECB)
@@ -89,55 +87,80 @@ Do banków centralnych, których działania są szczególnie istotne dla inwesto
 •	Szwajcaria - Szwajcarski Bank Narodowy (SNB)
 •	Australia – Bank Rezerwy Australii (RBA)
 " TextWrapping="Wrap" />
-                            </StackPanel>
-                        </Expander>
-                        <Expander HorizontalAlignment="Stretch" Header="STABILNOSC FINANSOWA">
-                            <StackPanel Orientation="Vertical" TextBlock.Foreground="{DynamicResource MaterialDesignBody}" Margin="24,8,24,16">
-                                <TextBlock Opacity=".68" Text="Siła waluty danego kraju jest obecnie znacząco związana z jego stabilnością finansową w zbiorowej percepcji uczestników rynku. Najbardziej oczywistym tego przykładem jest kryzys zadłużenia strefy euro lat 2009-2010, którego skutki odczuwamy do dziś. 
+							</StackPanel>
+						</Expander>
+						<Expander HorizontalAlignment="Stretch" Header="STABILNOSC FINANSOWA">
+							<StackPanel Orientation="Vertical" TextBlock.Foreground="{DynamicResource MaterialDesignBody}" Margin="24,8,24,16">
+								<TextBlock Opacity=".68" Text="Siła waluty danego kraju jest obecnie znacząco związana z jego stabilnością finansową w zbiorowej percepcji uczestników rynku. Najbardziej oczywistym tego przykładem jest kryzys zadłużenia strefy euro lat 2009-2010, którego skutki odczuwamy do dziś. 
 Głównymi czynnikami branymi pod uwagę podczas analizy stabilności finansowej danego kraju są:
 •	Relacja długu do PKB – procentowa relacja długu publicznego danego kraju do jego Produktu Krajowego Brutto (PKB) jest powszechnie stosowaną miarą stabilności finansowej. Stosunek długu do PKB powyżej 85% może być niebezpieczny dla przyszłości danej gospodarki
 •	Relacja deficytu do PKB – bieżący i prognozowany deficyt budżetowy w relacji do Produktu Krajowego Brutto jest kolejną miarą stabilności finansowej. Czym większy procentowy stosunek deficytu do PKB, tym większe zagrożenie stanowi dla gospodarki. Relacja deficytu do PKB powyżej 5-7% może stanowić poważne zagrożenie dla gospodarki danego kraju
 •	Wzrost PKB – niski lub ujemny wzrost PKB stanowi zagrożenie dla zdolności kraju do obsługi swojego długu publicznego. Obecnie stanowi to problem krajów strefy euro, które starają się zmniejszyć swoje zadłużenie w okresie niskiego lub ujemnego wzrostu PKB
 " TextWrapping="Wrap" />
-                            </StackPanel>
-                        </Expander>
-                        <Expander HorizontalAlignment="Stretch" Header="RYZYKO KREDYTOWE">
-                            <StackPanel Orientation="Vertical" TextBlock.Foreground="{DynamicResource MaterialDesignBody}" Margin="24,8,24,16">
-                                <TextBlock Opacity=".68" Text="Zmiany relatywnej wiarygodności kredytowej pomiędzy gospodarkami wpływają na kursy wymiany ich walut. Poniżej prezentujemy dobre miary wiarygodności kredytowej państw, a zmiany ich wskazań powinny być uważnie śledzone przez inwestorów walutowych:
+							</StackPanel>
+						</Expander>
+						<Expander HorizontalAlignment="Stretch" Header="RYZYKO KREDYTOWE">
+							<StackPanel Orientation="Vertical" TextBlock.Foreground="{DynamicResource MaterialDesignBody}" Margin="24,8,24,16">
+								<TextBlock Opacity=".68" Text="Zmiany relatywnej wiarygodności kredytowej pomiędzy gospodarkami wpływają na kursy wymiany ich walut. Poniżej prezentujemy dobre miary wiarygodności kredytowej państw, a zmiany ich wskazań powinny być uważnie śledzone przez inwestorów walutowych:
 •	Ratingi kredytowe – wszystkie główne agencje ratingowe (Moody's, Standard	and Poor's, Fitch) dostarczają niezależnych ratingów kredytowych. Obniżenie ratingów kredytowych kraju może mieć negatywny wpływ na kurs wymiany jego waluty
 •	Rentowność obligacji – zmiany w oprocentowaniu długu państw na rynku kapitałowym mogą być wczesnym wskaźnikiem rosnącego lub malejącego niepokoju o  możliwość spłaty zaciągniętych przez nie długów. Rentowność 10-letnich obligacji jest łatwą do śledzenia wzorcową miarą tego wskaźnika. Nagły wzrost kosztów obsługi długu danego kraju zwykle wpłynie negatywnie na kurs wymiany jego waluty
 •	Swapy kredytowe – credit default swaps (CDS) działają jak ubezpieczenie instrumentów długu. Kupujący za określone wynagrodzenie zgadza się przejąć od sprzedającego ryzyko niespłacenia długu będącego podstawą CDS. Gwałtowny wzrost wspomnianego wynagrodzenia, podobnie jak gwałtowny wzrost rentowności obligacji, może mieć silny negatywny wpływ na kurs wymiany waluty
 •	Wyniki aukcji długu – kolejnym istotnym czynnikiem, który należy brać pod uwagę są wyniki aukcji długu publicznego. Wartość sprzedanych na aukcji papierów dłużnych oraz premia, jakiej żądali kredytodawcy stanowią miarę powodzenia danej aukcji. Nieudana aukcja może spowodować negatywny wpływ na kurs wymiany waluty
 " TextWrapping="Wrap" />
-                            </StackPanel>
-                        </Expander>
-                        <Expander HorizontalAlignment="Stretch" Header="SYTUACJA GOSPODARCZA, A RYNEK WALUTOWY">
-                            <StackPanel Orientation="Vertical" TextBlock.Foreground="{DynamicResource MaterialDesignBody}" Margin="24,8,24,16">
-                                <TextBlock Opacity=".68" Text="Sytuacja w danej gospodarce ma oczywisty wpływ na kurs waluty w tym kraju. Jednak kurs ten jest również powiązany z poziomem rozwoju danego kraju. W krajach rozwiniętych spadki i wzrosty walut są przede wszystkim uzależnione od sytuacji gospodarczej w własnym kraju. Natomiast w krajach rozwijających się kurs waluty zależy nie tylko od sytuacji gospodarczej w własnym kraju ale jest on również uzależniony od aktualnej sytuacji w krajach rozwiniętych, które inwestują w gospodarki krajów rozwijających się. 
+							</StackPanel>
+						</Expander>
+						<Expander HorizontalAlignment="Stretch" Header="SYTUACJA GOSPODARCZA, A RYNEK WALUTOWY">
+							<StackPanel Orientation="Vertical" TextBlock.Foreground="{DynamicResource MaterialDesignBody}" Margin="24,8,24,16">
+								<TextBlock Opacity=".68" Text="Sytuacja w danej gospodarce ma oczywisty wpływ na kurs waluty w tym kraju. Jednak kurs ten jest również powiązany z poziomem rozwoju danego kraju. W krajach rozwiniętych spadki i wzrosty walut są przede wszystkim uzależnione od sytuacji gospodarczej w własnym kraju. Natomiast w krajach rozwijających się kurs waluty zależy nie tylko od sytuacji gospodarczej w własnym kraju ale jest on również uzależniony od aktualnej sytuacji w krajach rozwiniętych, które inwestują w gospodarki krajów rozwijających się. 
 
 Podczas kryzysu dużym powodzeniem wśród społeczeństwa cieszy się również złoto, które notuje tendencję wzrostową. W obliczu trudnych czasów wyciągamy kruszec, aby upłynniając go wzmocnić choć na chwilę budżet domowy. Zwiększony popyt na złoto w danych krajach również osłabia walutę krajową. 
 " TextWrapping="Wrap" />
-                            </StackPanel>
-                        </Expander>
-                        <Expander HorizontalAlignment="Stretch" Header="OBECNA SYTUACJA W POLSCE I W EUROPIE">
-                            <StackPanel Orientation="Vertical" TextBlock.Foreground="{DynamicResource MaterialDesignBody}" Margin="24,8,24,16">
-                                <TextBlock Opacity=".68" Text="Obecnie, w Europie mamy kryzys i prawie wszystkie gospodarki są w uśpieniu. W okresie tym producenci nie zwiększają inwestycji, a produkcję utrzymują na dotychczasowym lub niższym poziomie. 
+							</StackPanel>
+						</Expander>
+						<Expander HorizontalAlignment="Stretch" Header="OBECNA SYTUACJA W POLSCE I W EUROPIE">
+							<StackPanel Orientation="Vertical" TextBlock.Foreground="{DynamicResource MaterialDesignBody}" Margin="24,8,24,16">
+								<TextBlock Opacity=".68" Text="Obecnie, w Europie mamy kryzys i prawie wszystkie gospodarki są w uśpieniu. W okresie tym producenci nie zwiększają inwestycji, a produkcję utrzymują na dotychczasowym lub niższym poziomie. 
 Podobnie jak inne kraje w Europie, Polska gospodarka spowalnia już od ponad roku. Co prawda ostatnio w Polsce bezrobocie minimalnie spadło, ale mamy niskie wskaźniki aktywności gospodarczej i bardzo małą inflację. Do tego, obniżanie przez RPP stóp procentowych, które ma miejsce nieprzerwane od listopada 2012 r., nie przynosi zamierzonych efektów. Niskie stopy procentowe mają bowiem stymulować akcje kredytową i inwestycje, w rzeczywistości jednak odbicia nie widać. 
 " TextWrapping="Wrap" />
-                            </StackPanel>
-                        </Expander>
-                    </StackPanel>
-                </Grid>
-                <Grid Grid.Row="1" Grid.ColumnSpan="3" Margin="0,0,0,1">
-                    <TextBlock VerticalAlignment="Top" HorizontalAlignment="Left" TextWrapping="Wrap" Width="981" FontSize="20" Foreground="White" Style="{StaticResource MaterialDesignDisplay1TextBlock}" Margin="37,10,0,0" Height="255" >Nawet osoby niezainteresowane rynkiem FOREX wiedzą o tym, że notowania walutowe cechują się sporą zmiennością. Bezpośredni wpływ na kursy poszczególnych walut ma relacja pomiędzy popytem i podażą. Obecnie większość krajów rozwiniętych i rozwijających się stosuje system kursów płynnych. Taki wariant polityki kursowej zakłada tylko sporadyczną ingerencję państwa na rynku walutowym. W warunkach kursu płynnego, notowania walutowe są poddawane naturalnej grze sił rynkowych (popytu i podaży). <LineBreak/><LineBreak/>Czynniki oddziałujące na wysokość i zmiany kursu walutowego możemy podzielić na trzy najistotniejsze grupy: <LineBreak/>
- •	ekonomiczne <LineBreak/>
- •	polityczne  <LineBreak/>
- •	psychologiczne</TextBlock>
-                </Grid>
+							</StackPanel>
+						</Expander>
+						<Expander HorizontalAlignment="Stretch" Header="WARTO WIEDZIEĆ">
+							<StackPanel Orientation="Vertical" TextBlock.Foreground="{DynamicResource MaterialDesignBody}" Margin="24,8,24,16">
+								<TextBlock Opacity=".68" TextWrapping="Wrap" Text="Kurs złotówki jest przede wszystkim wypadkową dwóch czynników: sytuacji gospodarczej w kraju oraz nastrojów wśród inwestorów zachodnich.
+Kryzys w euro czy w USA powoduje bowiem znaczny odpływ kapitału z rynków wschodzących i rozwijających się, a ponieważ Polska należy do krajów rozwijających się, to kryzys w krajach zachodnich niekorzystnie wpływa również na złotówkę. Od 2009 roku mamy do czynienia z kryzysem w USA i Europie, a od ponad roku z znacznym spowolnieniem w Polsce. To tłumaczy więc dlaczego kurs EUR/PLN od dłuższego czasu wzrasta. Podobna sytuacja jest z frankiem szwajcarskim i dolarem amerykańskim. Natomiast ostatnie pozytywne wieści zza oceanu dodatkowo, kiedy Europa jest nadal w kryzysie, wzmacniają amerykańskiego dolara.
+	"></TextBlock>
+							</StackPanel>
+						</Expander>
+					</StackPanel>
+				</Grid>
+				<Grid Grid.Row="2" Grid.ColumnSpan="3" Margin="0,26,0,0">
+					<TextBlock TextWrapping="Wrap" FontSize="20" Margin="40,0,37,-0.5">
+						Bieżące kursy poszczególnych walut zależą głównie od następujących wydarzeń i zjawisk gospodarczych:
+					</TextBlock>
+				</Grid>
+				<Grid Grid.Row="1" Grid.ColumnSpan="3">
+					<TextBlock VerticalAlignment="Top" HorizontalAlignment="Left" TextWrapping="Wrap" Width="981" FontSize="20" Margin="37,10,0,0" Height="255" >Nawet osoby niezainteresowane rynkiem FOREX wiedzą o tym, że notowania walutowe cechują się sporą zmiennością. Bezpośredni wpływ na kursy poszczególnych walut ma relacja pomiędzy popytem i podażą. Obecnie większość krajów rozwiniętych i rozwijających się stosuje system kursów płynnych. Taki wariant polityki kursowej zakłada tylko sporadyczną ingerencję państwa na rynku walutowym. W warunkach kursu płynnego, notowania walutowe są poddawane naturalnej grze sił rynkowych (popytu i podaży).</TextBlock>
+					<TextBlock Margin="204,144,246,293" FontSize="20" TextAlignment="Center" TextWrapping="Wrap">Czynniki oddziałujące na wysokość i zmiany kursu walutowego możemy podzielić na trzy najistotniejsze grupy: <LineBreak/>•	ekonomiczne <LineBreak/>•	polityczne  <LineBreak/>•	psychologiczne</TextBlock>
+					<TextBlock Margin="62,244,618,10" FontSize="20" TextWrapping="Wrap">Czynniki ekonomiczne to:<LineBreak/>
+•	podaż walut obcych na rynku krajowym,<LineBreak/>
+•	popyt na waluty obce,<LineBreak/>
+•	różnice stóp procentowych oraz stóp inflacji na rynku obcym i krajowym,<LineBreak/>
+•	stopień reglamentacji waluty,<LineBreak/>
+•	polityka walutowa,<LineBreak/>
+•	stan gospodarki kraju oraz jego partnerów gospodarczych
+					</TextBlock>
+					<TextBlock Margin="625,247,81,196" FontSize="20" TextWrapping="Wrap">Czynniki polityczne:<LineBreak/>
+•	sytuacja międzynarodowa,<LineBreak/>
+•	napięcia polityczne.
+					</TextBlock>
+					<TextBlock Margin="625,381,10,53" FontSize="20" TextWrapping="Wrap">Czynniki psychologiczne wpływające na wysokość i zmiany kursu walutowego łączą się z oczekiwaniami dotyczącymi przyszłego stanu gospodarki.
+
+					</TextBlock>
+				</Grid>
 
 
-            </Grid>
+			</Grid>
 
-        </ScrollViewer>
-    </Grid>
+		</ScrollViewer>
+	</Grid>
 </UserControl>
