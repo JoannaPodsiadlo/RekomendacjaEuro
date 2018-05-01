@@ -29,7 +29,7 @@ namespace IE.Views
 
         private void btn1Content_Click(object sender, RoutedEventArgs e)
         {
-            frame1.Navigate(new Uri("https://www.paszport.ws/")); //dziala ok jak sie nacisnie Tak, jeden skrypt wyrzuca(ewentualnie)
+           frame1.Navigate(new Uri("https://www.paszport.ws/")); //dziala ok jak sie nacisnie Tak, jeden skrypt wyrzuca(ewentualnie)
         }
 
         private void btn3Content_Click(object sender, RoutedEventArgs e)
@@ -39,7 +39,7 @@ namespace IE.Views
 
         private void btn2Content_Click(object sender, RoutedEventArgs e)
         {
-            frame1.Navigate(new Uri("http://waluty.com.pl/s30-wiadomosci___rynek_walutowy__forex.html"));//wyrzuca kilka skryptow(2)
+           frame1.Navigate(new Uri("http://waluty.com.pl/s30-wiadomosci___rynek_walutowy__forex.html"));//wyrzuca kilka skryptow(2)
         }
     }
 }

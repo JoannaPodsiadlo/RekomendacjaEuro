@@ -174,18 +174,6 @@
     <Resource Include="Views\onas.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Views\my.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Views\my2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Views\my3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="bg.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Views\bg.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -202,6 +190,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Views\pyt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bG2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
