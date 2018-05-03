@@ -23,7 +23,7 @@ namespace IE.Views
         public AktView()
         {
             InitializeComponent();
-            frame1.Navigate(new Uri("https://www.paszport.ws/"));
+           frame1.Navigate(new Uri("https://www.paszport.ws/"));
            
         }
 
@@ -39,7 +39,7 @@ namespace IE.Views
 
         private void btn2Content_Click(object sender, RoutedEventArgs e)
         {
-           frame1.Navigate(new Uri("http://waluty.com.pl/s30-wiadomosci___rynek_walutowy__forex.html"));//wyrzuca kilka skryptow(2)
+          frame1.Navigate(new Uri("http://waluty.com.pl/s30-wiadomosci___rynek_walutowy__forex.html"));//wyrzuca kilka skryptow(2)
         }
     }
 }
